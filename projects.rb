@@ -27,3 +27,11 @@ project_group_four = [
   Project.new(Date.new(2015, 9, 2), Date.new(2015, 9, 2), Project::HIGH_COST_CITY),
   Project.new(Date.new(2015, 9, 2), Date.new(2015, 9, 3), Project::HIGH_COST_CITY)
 ]
+
+puts "Total Reimbursement for Set #1: #{ProjectGroup.new(project_group_one).total_project_reimbursement} "
+puts "========"
+puts "Total Reimbursement for Set #2: #{ProjectGroup.new(project_group_two).total_project_reimbursement}"
+puts "========"
+puts "Total Reimbursement for Set #3: #{ProjectGroup.new(project_group_three).total_project_reimbursement}"
+puts "========"
+puts "Total Reimbursement for Set #4: #{ProjectGroup.new(project_group_four).total_project_reimbursement}"
